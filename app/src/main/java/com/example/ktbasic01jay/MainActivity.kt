@@ -10,6 +10,32 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+// 문법 연습( 변수)
+// 변수만들기
+        val myName = "이재현"  //변수생성 + 대입 = 변수의 초기화
+
+        Log.d("변수값" , myName)
+
+//        문법연습 (조건문)
+//        나이를 확인해서 > 성인인지 아닌지
+
+
+        val userAge = 20
+
+
+        if (userAge >= 20) {
+
+            Log.d("성인판별", "성인이 맞습니다")
+        }
+
+        else if (userAge >=17){
+
+                Log.d("성인판별","고등학생")
+
+            }
+        else {
+            Log.d("성인판별","성인이 아닙니다")
+        }
 
         clickBtn.setOnClickListener {
 
